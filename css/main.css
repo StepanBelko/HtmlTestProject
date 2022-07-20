@@ -1,0 +1,55 @@
+header, main, aside, footer, article, section {
+  margin: 2px;
+  padding: 20px;
+  border: 2px solid #000000;
+}
+
+header, footer {
+  background-color: rgba(234, 20, 20, 0.1);
+}
+
+main {
+  width: 70%;
+  float: left;
+  background-color: rgba(211, 211, 255, 0.60);
+}
+
+article {
+  background-color: rgba(195, 195, 195, 0.6);
+}
+
+nav {
+  margin: 2px;
+  padding: 20px;
+  border: 2px solid #000000;
+  background-color: rgba(128, 128, 227, 0.6);
+}
+
+main {
+  width: 72%;
+}
+aside {
+  width: 20%;
+  height: 1100px;
+  float: right;
+  background-color: rgba(255, 255, 116, 0.6);
+}
+
+footer {
+  clear: both;
+}
+
+table, caption, th, td {
+  padding: 10px;
+  border: 2px solid #000000;
+}
+
+blockquote {
+  font-style: oblique;
+  background-color: rgba(240, 248, 255, 0.8);
+}
+
+pre {
+  background-color: rgba(70, 63, 62, 0.8);
+  color: rgba(228, 255, 0, 0.6);
+}

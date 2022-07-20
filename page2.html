@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="StpnBelko test page, description">
+  <meta name="Keywords" content="keywords for search, keywords, StpnBelko">
+  <meta http-equiv="refresh" content="60">
+
+  <title>Terminator(1984) page 2</title>
+
+  <link rel="icon" href="./images/skull2.png" type="image/png">
+
+</head>
+
+<body>
+
+<header><hr>
+    <mark>Header:</mark>
+    <h1> h1 Terminator(1984) page2 </h1>
+    <section>
+        <a id="up" href="#footerSkull">Down</a>
+
+        <a href="index.html">page1</a>
+        <a href="#">page2</a>
+    </section>
+    <p>
+        <img src="./images/TermAvatarSmall.webp" height="400" alt="">
+    </p>
+</header>
+
+<nav id="menu"> <!-- Меню -->
+  <mark>nav</mark>
+  <ul>
+    <li><a href="https://ru.wikipedia.org/wiki/Терминатор_(фильм)">Терминатор(Википедия)</a></li>
+    <li><a href="https://www.kinopoisk.ru/film/507/">Терминатор(Кинопоиск)</a></li>
+    <li><a target="_parent" href="#footerSkull">ссылка на картинку в подвале!!!!не работает</a></li>
+    <li><a href="/index.html">ссылка на предыдущую страницу</a></li>
+  </ul>
+</nav>
+
+<main>
+  <mark>main</mark>
+
+  <p>
+    <a id="TermAvatar">
+      <img title="IMAGE" src="/images/TermAvatarBig.jpeg" width="100" alt="">
+    </a> <br>
+    <button title="download button" name="download" value="Button">
+      <a download href="/images/TermAvatarBig.jpeg.jpeg" >Download image</a>
+    </button>
+  </p>
+  <section>
+    section 1 text:
+    <blockquote>
+      blockquote:
+      This article is about the film. For the franchise, see Terminator (franchise).
+      <br>For the character, see Terminator (character). For the character concept, see Terminator
+      <br>(character concept). For other uses, see Terminator (disambiguation).
+    </blockquote>
+  </section>
+  <section>
+
+    <details>
+      <summary>Show JavaCode</summary>
+      <pre>
+import java.util.concurrent.Semaphore;
+
+public class Main {
+
+    public static void main(String[] args) {
+
+        String str1 = "string";
+        String str2 = new String("string");
+        String str3 = "string";
+        System.out.println(str1 == str2);
+        System.out.println(str1 == str3);
+
+        Semaphore sem = new Semaphore(2);
+        new Philosopher(sem,"Сократ").start();
+        new Philosopher(sem,"Платон").start();
+        new Philosopher(sem,"Аристотель").start();
+        new Philosopher(sem,"Фалес").start();
+        new Philosopher(sem,"Пифагор").start();
+    }
+}
+
+class Philosopher extends Thread {
+
+    private Semaphore sem;
+
+    // поел ли философ
+    private boolean full = false;
+
+    private String name;
+
+    Philosopher(Semaphore sem, String name) {
+        this.sem=sem;
+        this.name=name;
+    }
+
+    public void run()
+    {
+        try
+        {
+            // если философ еще не ел
+            if (!full) {
+                //Запрашиваем у семафора разрешение на выполнение
+                sem.acquire();
+                System.out.println (name + " садится за стол");
+
+                // философ ест
+                sleep(300);
+                full = true;
+
+                System.out.println (name + " поел! Он выходит из-за стола");
+                sem.release();
+
+                // философ ушел, освободив место другим
+                sleep(300);
+            }
+        }
+        catch(InterruptedException e) {
+            System.out.println ("Что-то пошло не так!");
+        }
+    }
+}
+</pre>
+    </details>
+  </section>
+
+  <details>
+    <summary type="">
+      Show bad table
+    </summary>
+    <section>
+      <table border="1">
+        <tr>
+          <th>Month</th>
+          <th>Savings</th>
+        </tr>
+        <tr>
+          <td>January</td>
+          <td>$100</td>
+        </tr>
+      </table>
+
+    </section>
+  </details>
+
+
+  <details>
+    <summary>Show more</summary>
+    <br>It stars Arnold Schwarzenegger as the Terminator, a cyborg assassin sent back in
+    <br>time from 2029 to 1984 to kill Sarah Connor (Linda Hamilton), whose unborn son
+    <br>will one day save mankind from extinction by Skynet, a hostile artificial intelligence
+    <br>in a post-apocalyptic future. Kyle Reese (Michael Biehn) is a soldier sent back in time
+    <br>to protect Sarah. The screenplay is credited to Cameron and producer Gale Anne Hurd,
+    <br>while co-writer William Wisher Jr. received an "additional dialogue" credit.
+  </details>
+
+  <section>section 2 text:<p>main text:</p>
+    <q>
+      The Terminator is a 1984 American science fiction film directed by <a target="_blank" href="https://en.wikipedia.org/wiki/James_Cameron">James Cameron</a>.
+    </q> <br>
+    <br>It stars <a target="_self" href="https://en.wikipedia.org/wiki/Arnold_Schwarzenegger">Arnold Schwarzenegger</a> as the Terminator, a cyborg assassin sent back in
+    <br>time from 2029 to 1984 to kill Sarah Connor (<a target="_blank" href="/images/LindaHamilton.webp">Linda Hamilton</a>), whose unborn son
+    <br>will one day save mankind from extinction by Skynet, a hostile artificial intelligence
+    <br>in a post-apocalyptic future. Kyle Reese (<a target="_blank" href="/images/MichaelBien.webp">Michael Biehn</a>) is a soldier sent back in time
+    <br>to protect Sarah. The screenplay is credited to Cameron and producer Gale Anne Hurd,
+    <br>while co-writer William Wisher Jr. received an "additional dialogue" credit.
+
+  </section>
+
+  <section>
+    <ol>
+      <li>one</li>
+      <li>
+        <details open>
+          <summary>two</summary>
+          <ul>
+            <li>two one</li>
+            <li>two three</li>
+          </ul>
+        </details>
+      </li>
+
+      <li>three</li>
+      <ul>
+        <li>one</li>
+        <li>two</li>
+      </ul>
+      <li>four</li>
+    </ol>
+  </section>
+
+  <section>
+    <a>I'll be back</a> <br>
+    <img
+      src="data:image/jpeg;base64,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"
+      alt="">
+  </section>
+
+</main>
+
+<aside>
+  <mark>aside</mark>
+  <br>
+  <div>select option
+    <select name="SelectList" size="" id="">
+      <option>No1</option>
+      <option>No2</option>
+      <option>No3</option>
+    </select>
+  </div>
+</aside>
+
+<footer>
+  <mark>footer</mark>
+  designed by StpnBelko. <p>Minsk 2022</p>
+  <section>
+    <a id="footer"></a>
+  </section>
+  <p>
+    <a href="#top" id="footerSkull">
+      <img src="/images/skull.png" title="this is footer image">
+    </a>
+
+  </p>
+</footer>
+</body>
+</html>
