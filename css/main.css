@@ -30,10 +30,13 @@ body {
 }
 
 .modalDiv {
+  padding: 10px;
+  border: 1px solid #000000;
   position: fixed;
+  display: inline-block;
+  text-align: center;
   left: 50%;
   top: 80%;
-  padding: 20px;
   background-color: crimson;
   opacity: 70%;
 }
