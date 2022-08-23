@@ -17,9 +17,49 @@
 
 <body>
 
-<!--<div class="backgroundImage"></div>-->
+<div class="modalNavigation" style="
+    background-color: fuchsia;
+    border: 1px solid black;
+    opacity: 60%;
+    position: fixed;
+    display: grid;
+    left: 50%;
+    translate: -50%;
+    grid-template-columns: max-content max-content max-content max-content;
+    grid-template-rows: 1fr 1fr;">
 
-<div class="modalDiv" >Modal div
+    <div class="navigationWord" style="
+    grid-column-start: 1;
+    grid-column-end: span 4 ;">
+        <text>Modal navigation</text>
+    </div>
+
+    <div class="buttons">
+        <button title="page1button" name="Page 1" value="Button">
+            <a href="./index.html">Page 1</a>
+        </button>
+    </div>
+
+    <div class="buttons">
+        <button title="page2button" name="Page 2" value="Button">
+            <a href="./page2.html">Page 2</a>
+        </button>
+    </div>
+
+    <div class="buttons">
+        <button title="HomeWork3" name="HomeWork3" value="Button">
+            <a href="./HomeWork3.html">HomeWork#3</a>.
+        </button>
+    </div>
+
+    <div class="buttons">
+        <button title="HomeWork3" name="HomeWork3" value="Button">
+            <a href="./GridAndFlex.html">Grid&Flex</a>.
+        </button>
+    </div>
+</div>
+
+<div class="modalDiv">Modal div
     <p>
     <form action="./youAreTheTerminatorNow.html" target="_blank">
         <button>Стать терминатором без регистрации и смс</button>
@@ -44,10 +84,10 @@
         </a>
 
     </section>
-    
+
     <section>
         <img class="mainImage" src="./images/TermAvatarSmall.webp" height="400" alt="">
-        <p class="text" style="color: antiquewhite" >
+        <p class="text" style="color: antiquewhite">
             The Terminator is a 1984 American science fiction film directed by James Cameron.
 
             It stars Arnold Schwarzenegger as the Terminator, a cyborg assassin sent back in
@@ -59,12 +99,12 @@
         </p>
         <p class="clear"></p>
     </section>
-        
-    
+
+
 </header>
 
 <nav id="menu"> <!-- Меню -->
-<!--    цвет метрики-->
+    <!--    цвет метрики-->
     <meter
             min="0"
             max="100"
@@ -75,11 +115,8 @@
     >
     </meter>
     <br>
-    <progress ></progress>
+    <progress></progress>
     <br>
-
-
-    
 
 
     <mark>nav</mark>
@@ -93,7 +130,7 @@
     </ul>
 </nav>
 
-<main >
+<main>
     <mark>main</mark>
 
     <p>
@@ -293,7 +330,7 @@ class Philosopher extends Thread {
             <option>No3</option>
         </select>
     </div>
-    
+
     <form name="test" method="post" target="_blank" action="input1.php">
         <p><b>Ваше имя:</b><br>
             <input type="text" size="12">
@@ -304,7 +341,7 @@ class Philosopher extends Thread {
             <input type="radio" name="browser" value="firefox"> Firefox<Br>
         </p>
         <p>Комментарий<Br>
-            <textarea  name="comment" cols="40" rows="3"></textarea>
+            <textarea name="comment" cols="40" rows="3"></textarea>
         </p>
         <p><input type="submit" value="Отправить">
             <input type="reset" value="Очистить"></p>

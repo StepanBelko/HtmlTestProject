@@ -15,6 +15,48 @@
 </head>
 <body>
 
+<div class="modalNavigation" style="
+    background-color: fuchsia;
+    border: 1px solid black;
+    opacity: 60%;
+    position: fixed;
+    display: grid;
+    left: 50%;
+    translate: -50%;
+    grid-template-columns: max-content max-content max-content max-content;
+    grid-template-rows: 1fr 1fr;">
+
+    <div class="navigationWord" style="
+    grid-column-start: 1;
+    grid-column-end: span 4 ;">
+        <text>Modal navigation</text>
+    </div>
+
+    <div class="buttons">
+        <button title="page1button" name="Page 1" value="Button">
+            <a href="./index.html">Page 1</a>
+        </button>
+    </div>
+
+    <div class="buttons">
+        <button title="page2button" name="Page 2" value="Button">
+            <a href="./page2.html">Page 2</a>
+        </button>
+    </div>
+
+    <div class="buttons">
+        <button title="HomeWork3" name="HomeWork3" value="Button">
+            <a href="./HomeWork3.html">HomeWork#3</a>.
+        </button>
+    </div>
+
+    <div class="buttons">
+        <button title="HomeWork3" name="HomeWork3" value="Button">
+            <a href="./GridAndFlex.html">Grid&Flex</a>.
+        </button>
+    </div>
+</div>
+
 <header>header
     <h1 style="background: antiquewhite; opacity: 60% "> h1 Terminator(1984) HomeWork#3 </h1>
 </header>
@@ -33,8 +75,20 @@
 </nav>
 
 <main>main
-    <section> video section
-        <video controls poster="./images/mqdefault.jpeg" title="`The Terminator 1984 Official Trailer">
+    <p></p>
+    <section class="videoClass"> video section
+        <video controls poster="./images/mqdefault.jpeg" width="50%" title="`The Terminator 1984 Official Trailer">
+            <source src="./video/The%20Terminator%20(1984)%20Official%20Trailer%20-%20Arnold%20Schwarzenegge%20Movie.mp4">
+        </video>
+
+        <button title="download button" name="download" value="Button">
+            <a href="./video/The%20Terminator%20(1984)%20Official%20Trailer%20-%20Arnold%20Schwarzenegge%20Movie.mp4">Download
+                trailer</a>.
+        </button>
+    </section>
+
+    <section class="videoClass"> video section2
+        <video controls poster="./images/mqdefault.jpeg" width=50% title="`The Terminator 1984 Official Trailer">
             <source src="./video/The%20Terminator%20(1984)%20Official%20Trailer%20-%20Arnold%20Schwarzenegge%20Movie.mp4">
         </video>
 

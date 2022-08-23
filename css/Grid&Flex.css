@@ -1,0 +1,74 @@
+/*body {*/
+/*    margin: 0px;*/
+/*    padding: 5px;*/
+/*}*/
+.mainContainer, .mainContainer > * {
+    padding: 0px;
+    border: 0px solid black;
+}
+
+.mainContainer {
+    display: grid;
+    grid-template-areas:
+            "header header header"
+            "navigation main aside"
+            "footer footer footer";
+
+    grid-auto-columns: 25fr 60fr 25fr;
+    grid-auto-rows: 10% 1500px 10%;
+    grid-gap: 10px;
+}
+
+/*.modalNavigation {*/
+/*    background-color: fuchsia;*/
+/*    border: 1px solid black;*/
+/*    opacity: 60%;*/
+/*    position: fixed;*/
+/*    display: grid;*/
+/*    left: 100px;*/
+/*    grid-template-columns: max-content max-content max-content max-content;*/
+/*    grid-template-rows: 1fr 1fr;*/
+/*}*/
+
+/*.navigationWord {*/
+/*    border: 1px solid black;*/
+/*    grid-column-start: 1;*/
+/*    grid-column-end: span 4 ;*/
+/*}*/
+/*.buttons {*/
+/*    border: 1px solid black;*/
+/*}*/
+
+
+
+
+.header {
+    grid-area: header;
+    background-color: crimson;
+    border: 1px solid black;
+}
+
+.navigation {
+    grid-area: navigation;
+    background-color: darkgrey;
+    border: 1px solid black;
+}
+
+.main {
+    grid-area: main;
+    background-color: darkcyan;
+    border: 1px solid black;
+}
+
+.aside {
+    grid-area: aside;
+    background-color: chocolate;
+    border: 1px solid black;
+}
+
+.footer {
+    z-index: 1;
+    grid-area: footer;
+    background-color: burlywood;
+    border: 1px solid black;
+}

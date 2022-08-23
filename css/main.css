@@ -39,6 +39,8 @@ body {
   top: 80%;
   background-color: crimson;
   opacity: 70%;
+  align-items: center;
+  transform: translate(-50%); 
 }
 
 /*.backgroundImage {

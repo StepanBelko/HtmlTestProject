@@ -48,7 +48,7 @@ main {
     border: 2px solid #000000;
     width: 68%;
     height: 1000px;
-    min-width: 150px;
+    min-width: 320px;
     float: left;
     background-color: rgba(211, 211, 255, 0.60);
 
@@ -58,9 +58,19 @@ audio {
     width: 100%;
 }
 
-video {
-    /*position: relative;*/
-    width: 100%;
+/*video {*/
+/*    !*position: relative;*!*/
+/*    width: 50%;*/
+/*}*/
+
+.videoClass {
+    display: flex;
+    flex-wrap: wrap;
+    box-sizing: border-box;
+    justify-content: center;
+    width: 47%;
+    min-width: 300px;
+    float: left;
 }
 
 
