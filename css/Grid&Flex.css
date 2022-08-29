@@ -1,7 +1,10 @@
 /*body {*/
 /*    margin: 0px;*/
-/*    padding: 5px;*/
+/*    padding: 5px;*/     œ
 /*}*/
+
+@import url('https://fonts.googleapis.com/css2?family=DynaPuff&family=Rubik+Distressed&display=swap');
+
 .mainContainer, .mainContainer > * {
     padding: 0px;
     border: 0px solid black;
@@ -71,4 +74,17 @@
     grid-area: footer;
     background-color: burlywood;
     border: 1px solid black;
+}
+
+h1 {
+    color: #ffffff;
+    text-shadow: 0 0 20px #000000;
+    font-family: 'Rubik Distressed', Arial, sans-serif;
+}
+
+.item {
+    padding: 20px;
+    /*border: 1px solid #000000;*/
+    /*box-shadow: 0 0 10px #070707;*/
+    outline: 10px dot-dot-dash darkblue;
 }

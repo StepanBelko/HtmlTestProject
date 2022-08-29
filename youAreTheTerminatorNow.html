@@ -9,12 +9,28 @@
     <meta http-equiv="refresh" content="60">
     <link rel="icon" href="./images/skull2.png" type="image/png">
     <title>You are the terminator now!!!</title>
+    <link rel="stylesheet" href="css/youAreTheTerminatorNow.css">
 </head>
 <body>
 
 <div class="background">
     <img src="./images/terminator-wallpapers-122289-312568-3464776.png" width=100%>
 </div>
+
+<form method="post" name="becomeAterminator" action="http://localhost:8080"  class="form" >
+    <div class="name">name
+        <input type="text" placeholder="Ivanov Ivan">
+    </div>
+    <div class="email">email
+        <input type="email" placeholder="email"></div>
+    <div class="phone">phone
+        <input type="tel" placeholder="+***-**-***-**-**"></div>
+    <div class="about">about
+        <input type="text" maxlength="100px"></div>
+    <div class="send">
+        <input type="submit" value="Send">
+        <input type="reset" value="Reset"></div>
+</form>
 
 </body>
 </html>

@@ -23,9 +23,15 @@ header, footer {
 body {
     /* Цвет фона и путь к файлу */
 
-    background: url(../images/terminator-wallpapers-122289-312603-8379372.png) fixed;
+    /*background: url(../images/terminator-wallpapers-122289-312603-8379372.png) fixed;
     background-size: 100vw 100vh;
+    margin: 0px;*/
+
+    background: url(../images/terminator-wallpapers-122289-312603-8379372.png) fixed;
+    /*background-size: cover;*/
+    background-size: 100% 100%;
     margin: 0px;
+    
 
 }
 
@@ -68,7 +74,7 @@ audio {
     flex-wrap: wrap;
     box-sizing: border-box;
     justify-content: center;
-    width: 47%;
+    width: 100%;
     min-width: 300px;
     float: left;
 }
